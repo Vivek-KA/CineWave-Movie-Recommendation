@@ -1,23 +1,102 @@
-.player{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.player {
+  height: 100vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  padding: 20px;
 }
-.player img{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 50px;
-    cursor: pointer;
+
+/* Back Arrow */
+.player img {
+  position: absolute;
+  top: 20px;
+  left: 6%;
+  width: 40px;
+  cursor: pointer;
+  z-index: 10;
 }
-.player iframe{
-    border-radius: 10px;
+
+/* Video Frame */
+.player iframe {
+  width: 90%;
+  height: 70vh;
+  border-radius: 8px;
 }
+
+/* Video Info */
 .player-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* ============================= */
+/* 📱 TABLET RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 1024px) {
+
+  .player iframe {
+    height: 60vh;
+  }
+
+  .player img {
+    width: 35px;
+  }
+}
+
+/* ============================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .player {
+    justify-content: flex-start;
+    padding-top: 80px;
+  }
+
+  .player img {
+    width: 30px;
+    top: 15px;
+    left: 5%;
+  }
+
+  .player iframe {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .player-info {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+}
+
+/* ============================= */
+/* 📱 SMALL PHONES */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+  .player iframe {
+    height: 35vh;
+  }
+
+  .player img {
+    width: 25px;
+  }
+
+  .player-info {
+    font-size: 12px;
+  }
 }
