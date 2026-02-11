@@ -38,7 +38,7 @@
 }
 
 /* ============================= */
-/* 📱 TABLET RESPONSIVE */
+/* TABLET RESPONSIVE */
 /* ============================= */
 
 @media (max-width: 1024px) {
@@ -53,7 +53,7 @@
 }
 
 /* ============================= */
-/* 📱 MOBILE RESPONSIVE */
+/*  MOBILE RESPONSIVE */
 /* ============================= */
 
 @media (max-width: 768px) {
@@ -83,7 +83,7 @@
 }
 
 /* ============================= */
-/* 📱 SMALL PHONES */
+/*  SMALL PHONES */
 /* ============================= */
 
 @media (max-width: 480px) {
